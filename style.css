@@ -1,0 +1,122 @@
+@font-face {
+    font-family: bolo;
+    src: url(./cheri/CHERI___.TTF);
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #e9967a;
+}
+
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 3em;
+    text-align: center;
+    color: #ffffff;
+}
+
+.container {
+    width: 800px;
+    height: 460px;
+    overflow: hidden;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+}
+
+
+.imagem img {
+    height: 100%;
+    width: 100%;
+}
+
+.bar {
+    background-color: #cd5c5c;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.bar:hover {
+    background-color: #000000;
+}
+
+.navegacao {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+#imagem2:checked~.navegacao {
+    background-color: #000000;
+}
+
+input {
+    display: none;
+}
+
+.imagens {
+    display: flex;
+    height: 100%;
+    width: 700%;
+}
+
+.imagem {
+    width: 14.28571428571429%;
+    transition: all 1.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+#imagem1:checked~.img1 {
+    margin-left: 0%;
+
+}
+
+#imagem2:checked~.img1 {
+    margin-left: -14.28571428571429%;
+}
+
+#imagem3:checked~.img1 {
+    margin-left: -28.57142857142858%;
+}
+
+#imagem4:checked~.img1 {
+    margin-left: -42.85714285714287%;
+}
+
+#imagem5:checked~.img1 {
+    margin-left: -57.14285714285716%;
+}
+
+#imagem6:checked~.img1 {
+    margin-left: -71.42857142857145%;
+}
+
+#imagem7:checked~.img1 {
+    margin-left: -85.71428571428574%;
+}
+
+header h1 {
+    font-family: bolo;
+    color: #ffffffc7;
+
+}
+
+footer {
+    background-color: #8f2929;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 45%;
+}
+.header{
+    background-color: #8f2929;
+    margin-top: 0;
+    padding: 0;
+}
